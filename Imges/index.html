@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e4868983fb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./Imges/logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Java Developer</p>
+          <h1>Hi, I'm <span>Koteswararao</span> <br />From Andhra Pradesh</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- #region ========================   Header section completed   ================== -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./Imges/1662806214466.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Strong in design and in intuitive problemsolving skills.
+              Proficient in Spring Boot. Passionate about implementing and
+              launching new projects. Looking to start the career as an
+              entry-level software developer with a reputed firm driven by
+              technology.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>HTML</span><br />Experienced</li>
+                <li><span>CSS</span><br />Experienced</li>
+                <li><span>Javascript</span><br />Experienced</li>
+                <li><span>Java</span><br />Experienced</li>
+                <li><span>Spring Boot</span><br />Experienced</li>
+                <!-- <li><span>github</span><br />Experienced</li> -->
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <img src="./Imges/logo1.svg" alt="" />
+              <p>Java Developer | 2022-Present</p>
+              <p>Masai School</p>
+              <img src="./Imges/logo1.svg" alt="" />
+              <p>Bachelor of Technology | 2018-Present</p>
+              <p>LBRCE(Autonomous),Mylavaram</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #region AboutMe section completed       -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              laborum sint laboriosam dolorem, dicta quas nisi doloribus ducimus
+              minus tenetur modi sequi esse culpa deserunt quae minima illum
+              quos adipisci!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-sharp fa-solid fa-crop"></i>
+            <h2>UiDesign</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              laborum sint laboriosam dolorem, dicta quas nisi doloribus ducimus
+              minus tenetur modi sequi esse culpa deserunt quae minima illum
+              quos adipisci!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+              laborum sint laboriosam dolorem, dicta quas nisi doloribus ducimus
+              minus tenetur modi sequi esse culpa deserunt quae minima illum
+              quos adipisci!
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #region  Contact region starts    -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>Koteswararao791212@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>9014595789</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="./Imges/Koti_Resume.pdf" download id="pdf" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright @ Koti</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
