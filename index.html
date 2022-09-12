@@ -17,20 +17,22 @@
       <div class="container">
         <nav>
           <img src="./Imges/logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-            <i class="fa-solid fa-circle-xmark"></i>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Projects</a></li>           
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
 
         <div class="header-text">
-          <p>Java Developer</p>
+          <p>Java Backend Developer</p>
           <h1>Hi, I'm <span>Koteswararao</span> <br />From Andhra Pradesh</h1>
+        </div>
+        <div id="animated">
+          <img src="./Imges/animated img.gif" >
         </div>
       </div>
     </div>
@@ -71,7 +73,7 @@
             </div>
 
             <div class="tab-contents" id="education">
-              <img src="./Imges/logo1.svg" alt="" />
+              <img  src="./Imges/logo1.svg" alt="" />
               <p>Java Developer | 2022-Present</p>
               <p>Masai School</p>
               <img src="./Imges/logo1.svg" alt="" />
@@ -82,12 +84,80 @@
         </div>
       </div>
     </div>
-    <!-- #region AboutMe section completed       -->
+    <!--================= #region AboutMe section completed   ==============================    -->
 
-    
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+
+          <div id="orbitz">  
+            <h2>orbitz</h2>        
+            <img src="./Imges/orbitz.png" >
+            <a href="https://reliable-llama-c038f5.netlify.app/">learn more</a>
+          </div>
+
+          <div>
+            <h2>GeekBuying</h2> 
+            <img src="./Imges/GeekBuying.png" >
+            <a href="https://lucky-crostata-7684aa.netlify.app/">learn more</a>
+          </div>
+          <div>
+            <h2>Youtube</h2> 
+            <img src="./Imges/youtube.png" >           
+            <a href="https://stellar-marzipan-2c148d.netlify.app/">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--========================== #region  Contact region starts    ==================================-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>Koteswararao791212@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>9014595789</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/koti.nic/"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://www.instagram.com/koti_nic/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/koteswararao-pathakoti-b8a377230/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="./Imges/Koti_Resume.pdf" download id="pdf" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <!-- <p>Copyright @ Koti</p> -->
+      </div>
+    </div>
   </body>
 </html>
 
+<!-- #region ================ Script Files =======================-->
 <script>
   var tablinks = document.getElementsByClassName("tab-links");
   var tabcontents = document.getElementsByClassName("tab-contents");
@@ -101,4 +171,36 @@
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
   }
+</script>
+
+<script>
+
+let sidemenu=document.getElementById("sidemenu");
+function openmenu(){
+  sidemenu.style.right="0";
+}
+function closemenu(){
+  sidemenu.style.right="-200px";
+}
+
+</script>
+
+<!-- #region google sheet script-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyldsPi_0Ry6sEz0dbL1jGS1seRMlq-EWAngbyVoQ3bjbqDTt4eS_WQJL-K3vu2to8w/exec'
+
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg");
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>{
+        msg.innerHTML="Message sent sucessfully"
+        setTimeout(function(){
+          msg.innerHTML="";
+        },5000)
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
 </script>
