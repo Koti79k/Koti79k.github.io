@@ -195,7 +195,7 @@ nav ul li a:hover::after{
     margin-top: -5%;
 }
 #orbitz>img{
-    height: 90%;
+    height: 70%;
     width: 113.5%;
     margin-top: -10%;
     /* margin-left: -7%; */
@@ -221,9 +221,16 @@ nav ul li a:hover::after{
    
 }
 .services-list div img {
-    height: 87%;
+    height: 70%;
     width: 113%;
 
+}
+.services-list div img+p{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    /* margin-left: 10%; */
 }
 .services-list div a{
     text-decoration: none;
@@ -246,7 +253,7 @@ nav ul li a:hover::after{
     width: 100%;
     /* border: 1px solid blue; */
     /* background-color: rgb(30, 41, 59);
- } */ */
+ } */ 
 
 /* ================  contact details  ================== */
 
