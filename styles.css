@@ -50,7 +50,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color: #ff004f;
+    background-color: rgb(237, 74, 14);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -63,20 +63,26 @@ nav ul li a:hover::after{
 
 .header-text{
     margin-top: 20%;
-    font-size: 30px;
+    font-size: 150%;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 180%;
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: rgb(237, 74, 14);
+    color: rgb(17, 239, 110);
 }
+/*============================  Animated Image ===========================*/
 #animated{
     height: 30%;
     width: 50%;   
     margin-left: 60%;
-    margin-top: -27%;
+    margin-top: -23%;
+}
+#animated img{
+    height: 80%;
+        width: 90%;
+        
 }
 /*========================   Header section completed   ==================*/
 
@@ -126,7 +132,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: rgb(237, 74, 14);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -142,7 +148,7 @@ nav ul li a:hover::after{
     margin:10px 0 ;
 }
 .tab-contents ul li span{
-    color: #ff004f;
+    color: rgb(237, 74, 14);
     font-size: 14px;
 }
 /*============    displaying one tab       ==================*/
@@ -155,7 +161,7 @@ nav ul li a:hover::after{
 /*============    displaying one tab completed     ==================*/
 
 #education img{
-    background-color: #ca0543;
+    background-color: rgb(237, 74, 14);
     border-radius: 100px;
     height: 50px;
     width: 50px;
@@ -241,7 +247,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #ff004f;
+    background: rgb(2, 166, 70);
     transform: translateY(-10px);
 }
 .services-list a+a{
@@ -254,6 +260,106 @@ nav ul li a:hover::after{
     /* border: 1px solid blue; */
     /* background-color: rgb(30, 41, 59);
  } */ 
+ /*================================= statics =================================== */
+ .heading {
+     text-align: center;
+ }
+
+ .heading h2 {
+     font-size: 30px;
+ }
+
+ .heading span {
+     font-size: var(--p-font);
+     color: rgb(2, 166, 70);
+     
+ }
+ #statics{
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+ }
+ .skills-content {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(210px, auto));
+     justify-content: center;
+     gap: 1rem;
+     margin-top: 2rem;
+ }
+
+ #myskills {
+     display: grid;
+     grid-template-columns: repeat(2, minmax(200px, auto));
+     justify-content: center;
+     gap: 1rem;
+     margin-top: 2rem;
+ }
+
+ #myskills .skills-box {
+     border: 1px solid;
+     width: 450px;
+ }
+
+ .skills-box {
+     padding: 20px;
+     width: 260px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     border-radius: 0.5rem;
+     border-bottom: 2px solid var(--main-color);
+     /* box-shadow: 0 2px 7px rgba(14, 55, 54 /15%); */
+    background-color: rgb(230, 73, 16);
+ }
+
+
+ .skills-box .fa-brands {
+     padding-top: 2rem;
+     font-size: 54px;
+     color: var(--main-color);
+ }
+
+ .skills-box .fa-sharp {
+     padding-top: 2rem;
+     font-size: 54px;
+     color: var(--main-color);
+ }
+
+ .skills-box h3 {
+     font-size: 1rem;
+     font-weight: 600;
+     margin: 0.7rem 0 0.4rem;
+ }
+
+ .skills-box a {
+     color: var(--main-color);
+     font-size: var(--p-font);
+     font-weight: 500;
+ }
+
+ /* hover */
+ .skills-box:hover {
+     /* background-color: #02225a; */
+    background-color: rgb(2, 166, 70);
+ }
+
+ /* .skills-box:hover h3 {
+     color: #fff;
+ }
+
+ .skills-box:hover .fa-brands {
+     color: #22cf91;
+ }
+
+ .skills-box:hover .fa-sharp {
+     color: #22cf91;
+ }
+
+ .skills-box:hover a {
+     color: #8b8a8f;
+ } */
+
 
 /* ================  contact details  ================== */
 
@@ -267,7 +373,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #ff004f;
+    color: rgb(237, 74, 14);
     margin-right: 15px;
     font-size: 25px;
 }
@@ -278,18 +384,18 @@ nav ul li a:hover::after{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: rgb(237, 74, 14);
     display: inline-block;
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #ff004f;
+    color: rgb(2, 166, 70);
     transform: translateY(-5px);
      
 }
 .btn.btn2{
     display: inline-block;
-     background: #ff004f;
+     background: rgb(237, 74, 14);
      text-decoration: none;
      color: #fff;
      
@@ -302,6 +408,12 @@ nav ul li a:hover::after{
     padding: 15px 5px 5px 15px;
     font-size: 18px;
     border-radius: 10px;
+}
+#pdf:hover{
+    background-color: rgb(2, 166, 70);
+}
+.btn2:hover{
+    background-color: rgb(2, 166, 70);
 }
 .social-icons+a{
     padding-top: 5px;
@@ -329,9 +441,10 @@ form .btn2{
     margin-top: 20px;
      cursor: pointer;
     border-radius: 10px;
+    
 }
 .copyright{
-    width: 100%;
+    width: auto;
     text-align: center;
     padding: 25px 0;
     background: #262626;
@@ -342,12 +455,12 @@ form .btn2{
     
 }
 #icons a{
-    color: #61b752;
+    color:rgb(230, 73, 16) ;
     /* height: 100px; */
     width: 7%;
 }
 #icons a :hover{
-    color: #ff004f;
+    color: rgb(2, 166, 70);
     font-size: 40px;
 
 }
@@ -379,7 +492,7 @@ nav .fa-solid{
             font-size: 25px;
         }
         nav ul{
-            background: #ff004f;
+            background: rgb(237, 74, 14);
             position: fixed;
             top: 0;
             right: -200px;
@@ -437,6 +550,13 @@ nav .fa-solid{
        .copyright{
         font-size: 14px;
        }
+                #statics {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+        
+                #statics .skills-box {
+                    width: 150px;
+                }
 
 }
 #msg{
