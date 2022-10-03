@@ -180,7 +180,7 @@ nav ul li a:hover::after{
 }
 /*============    Education tab completed     ==================*/
 
-#services{
+/* #services{
     padding: 30px 0;
 }
 #services .sub-title{
@@ -201,24 +201,19 @@ nav ul li a:hover::after{
     margin-top: -5%;
 }
 #orbitz>img{
-    height: 70%;
-    width: 113.5%;
+    height: 40%;
+    width: 100%;
     margin-top: -10%;
-    /* margin-left: -7%; */
     border-radius: 5px;
 }
 .services-list div{
-    /* background-color:white; */
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s,transform 0.5s;
 }
-/* .services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-} */
+
 .services-list div h2{
     font-size: 30px;
     font-weight: 500;
@@ -236,7 +231,7 @@ nav ul li a:hover::after{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 5%;
     margin-top: 2%;
-    /* margin-left: 10%; */
+    
 }
 .services-list div a{
     text-decoration: none;
@@ -252,28 +247,132 @@ nav ul li a:hover::after{
 }
 .services-list a+a{
     margin-left: 60%;
+} */
+
+/* ================project details Starts ==================*/
+
+.project .title{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: rgb(17, 239, 110);
 }
-/* ================project details completed ==================*/
- /* #blank{
-    height: 100px;
+
+.project .carousel .card {
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.pro-info {
+    padding: 1rem 0 1rem 0;
+}
+
+
+.edu-logo {
+    width: 35%;
+}
+
+.pro-info>div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.pro-info>div>img {
+    width: 40px;
+    height: 40px;
+
+}
+
+#project h2{
+ margin: auto;
+}
+.project-main {
     width: 100%;
-    /* border: 1px solid blue; */
-    /* background-color: rgb(30, 41, 59);
- } */ 
+    border-radius: 10px;
+    transform: translateX(400%);
+    transition: transform 1000ms ease-in-out;
+    background-color: #fff;
+    color: #111;
+}
+
+.cont-box>img {
+    width: 50px;
+}
+
+.cont-box>h2 {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.project-main:nth-child(even) {
+    transform: translateX(-400%);
+}
+
+.project-main.show {
+    transform: translateX(0);
+}
+
+.my-cont {
+    width: 75%;
+    display: block;
+}
+
+.project-main {
+    display: flex;  
+    width: 60%;  
+    padding: 10px;
+    gap: 1rem;
+    margin-top: 5%;   
+    margin: 20px auto;
+}
+
+.inside-1 {
+    width: 50%; 
+}
+
+.inside-2 {
+    width: 50%;
+}
+
+.inside-2>div>h2 {
+    font-size: 1.25rem;
+}
+
+.inside-1>img {
+    width: 100%;
+    height: 100%;
+}
+.anch{
+    height: 50px;
+    width: 150px;
+    padding-top: 15px ;
+}
+.anch a{
+    text-decoration: none;
+    color:rgb(237, 74, 14) ;
+}
+.anch>a:hover{
+    color: rgb(17, 239, 110);
+}
+
  /*================================= statics =================================== */
  .heading {
      text-align: center;
  }
 
  .heading h2 {
-     font-size: 30px;
+     font-size: 40px;
+     color: rgb(17, 239, 110);
+     margin-top: 100px;
  }
 
- .heading span {
-     font-size: var(--p-font);
-     color: rgb(2, 166, 70);
-     
- }
  #statics{
     padding-top: 50px;
     width: 80%;
@@ -343,22 +442,6 @@ nav ul li a:hover::after{
      /* background-color: #02225a; */
     background-color: rgb(2, 166, 70);
  }
-
- /* .skills-box:hover h3 {
-     color: #fff;
- }
-
- .skills-box:hover .fa-brands {
-     color: #22cf91;
- }
-
- .skills-box:hover .fa-sharp {
-     color: #22cf91;
- }
-
- .skills-box:hover a {
-     color: #8b8a8f;
- } */
 
 
 /* ================  contact details  ================== */

@@ -1,0 +1,292 @@
+@media (max-width: 991px) {
+    .max-width {
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px) {
+    .menu-btn {
+        display: block;
+        z-index: 999;
+        color: #fff;
+        font-size: 23px;
+        cursor: pointer;
+    }
+
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .max-width {
+        max-width: 930px;
+    }
+
+    .about .about-content .column {
+        width: 100%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+
+    .services .serv-content .card {
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .skills .skills-content .column,
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+
+    .home .home-content a {
+        font-size: 20px;
+    }
+
+    .services .serv-content .card {
+        width: 100%;
+    }
+
+    .project-main {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        /* border: 2px solid rgb(71, 255, 80); */
+        padding: 10px;
+        gap: 1rem;
+        margin-top: 5%;
+        /* align-items: center; */
+        margin: 20px auto;
+    }
+
+    .inside-1 {
+        /* border: 1px solid red; */
+        width: 100%;
+        /* height: 100%; */
+    }
+
+    .inside-2 {
+        width: 100%;
+    }
+
+    .inside-2>div>h2 {
+        font-size: 1rem;
+    }
+
+    .inside-1>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .my-cont {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .my-cont>.cont-box-1 {
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        margin-top: 3%;
+        padding: 1.5%;
+        background-color: #000;
+
+    }
+
+    .github-stat {
+        width: 300px;
+        font-size: 8px;
+    }
+
+    .github-stat {
+        width: 100%;
+        font-size: 8px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .cont-box-1>img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .github-stat>img {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .pro-info>div>img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .skils-content-1>div {
+        margin-top: 20px;
+    }
+
+    .skils-content-1>div>img {
+        margin: 5px;
+    }
+
+    .github-stats-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        margin-top: 50px;
+        grid-gap: 40px;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+
+    .about .about-content .right .text,
+    .skills .skills-content .left .text {
+        font-size: 19px;
+    }
+
+    .contact .right form .fields {
+        flex-direction: column;
+    }
+
+    .contact .right form .name,
+    .contact .right form .email {
+        margin: 0;
+    }
+
+    .right form .error-box {
+        width: 150px;
+    }
+
+    .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+
+    .project-main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .github-stat {
+        width: 100%;
+        font-size: 8px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .cont-box-1>img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .github-stat>img {
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .pro-info>div>img {
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .skils-content-1>div {
+        margin-top: 20px;
+    }
+
+    .skils-content-1>div>img {
+        margin: 5px;
+    }
+
+    .github-stats-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        margin-top: 50px;
+        grid-gap: 40px;
+    }
+
+    .my-cont {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .my-cont>.cont-box-1 {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3%;
+        padding: 1.5%;
+        background-color: #000;
+
+    }
+
+}
