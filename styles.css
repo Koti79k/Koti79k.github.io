@@ -18,18 +18,24 @@ body{
     /* background-image: url(./Imges/logo.png);
     background-size: cover;
     background-position: center; */
+    
    
 }
 
 .container{
     padding: 10px 10%;
 }
-nav{
+nav{ 
+    /* position: fixed; */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+  
 }
+
+
+
 .logo{
     width: 140px;
 }
@@ -50,7 +56,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color: rgb(237, 74, 14);
+    background-color: rgb(187, 240, 12);
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -70,7 +76,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: rgb(17, 239, 110);
+    color: rgb(187, 240, 12);
 }
 /*============================  Animated Image ===========================*/
 #animated{
@@ -126,21 +132,24 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: rgb(187, 240, 12);
 }
+
 
 .tab-links::after{
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(237, 74, 14);
+    background: rgb(187, 240, 12);
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -8px;   
     transition: 0.5s;
 
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 90%;
+    
 
 }
 .tab-contents ul li{
@@ -148,7 +157,7 @@ nav ul li a:hover::after{
     margin:10px 0 ;
 }
 .tab-contents ul li span{
-    color: rgb(237, 74, 14);
+    color: rgb(187, 240, 12);
     font-size: 14px;
 }
 /*============    displaying one tab       ==================*/
@@ -168,94 +177,73 @@ nav ul li a:hover::after{
 }
 #education img+p{
     margin-top: -50px;
-    margin-left: 10%;
+    margin-left: 70px;
     font-size: 20px;
 }
 #education img+p+p{
     font-size: 15px;
-    margin-left: 10%;
+    margin-left: 70px;
     margin-bottom: 5%;
     margin-top: 1%;
 
 }
 /*============    Education tab completed     ==================*/
+/*=============================== Skills Section ========================*/
+#skills1 {
+    width: 80%;
+    margin: auto;
+}
 
-/* #services{
-    padding: 30px 0;
+#skills1 h1 {
+    color: rgb(187, 240, 12);
+    text-align: center;
 }
-#services .sub-title{
-    font-size: 50px;
-    font-style: normal;
-    color: #fff;
-}
-.services-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
 
-
-}
-#orbitz>h2{
-    margin-bottom: 15%;
-    margin-top: -5%;
-}
-#orbitz>img{
-    height: 40%;
+#skills1>#skills-container1 {
     width: 100%;
-    margin-top: -10%;
-    border-radius: 5px;
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
 }
-.services-list div{
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+
+#skills1>#skills-container1>div {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+        rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+}
+
+#skills1>#skills-container1>div:hover {
+    transform: scale(1.05);
+}
+
+#skills1>#skills-container1>div>img {
+    width: 100%;
     border-radius: 10px;
-    transition: background 0.5s,transform 0.5s;
 }
 
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-top: -5%;
-    margin-bottom: 7%;
-   
-}
-.services-list div img {
-    height: 70%;
-    width: 113%;
-
-}
-.services-list div img+p{
-    font-size: 18px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-bottom: 5%;
-    margin-top: 2%;
-    
-}
-.services-list div a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    margin-top: 20px;
-    display: inline-block;
-}
-
-.services-list div:hover{
-    background: rgb(2, 166, 70);
-    transform: translateY(-10px);
-}
-.services-list a+a{
-    margin-left: 60%;
-} */
+/* /////////\\\\\\\\\\\\\\------- PROJECT SECTION--------///////////////\\\\\\\\\\\\\\\ */
 
 /* ================project details Starts ==================*/
-
+body{
+    overflow-x: hidden;
+}
 .project .title{
     text-align: center;
     font-size: 40px;
     padding-bottom: 20px;
-    color: rgb(17, 239, 110);
+    color: rgb(187, 240, 12);
 }
 
 .project .carousel .card {
@@ -361,7 +349,7 @@ nav ul li a:hover::after{
     color:rgb(237, 74, 14) ;
 }
 .anch>a:hover{
-    color: rgb(17, 239, 110);
+    color: rgb(187, 240, 12);
 }
 
  /*================================= statics =================================== */
@@ -371,19 +359,21 @@ nav ul li a:hover::after{
 
  .heading h2 {
      font-size: 40px;
-     color: rgb(17, 239, 110);
+     color: rgb(187, 240, 12);
      margin-top: 100px;
  }
 
- #statics{
-    padding-top: 50px;
-    width: 80%;
-    margin: auto;
+ #statics {
+     padding-top: 50px;
+     width: 80%;
+     margin: auto;
  }
+
  .skills-content {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(210px, auto));
-     justify-content: center;
+     display: flex;
+     /* grid-template-columns: repeat(auto-fit, minmax(210px, auto)); */
+     flex-wrap: wrap;
+     justify-content: space-evenly;
      gap: 1rem;
      margin-top: 2rem;
  }
@@ -403,7 +393,7 @@ nav ul li a:hover::after{
 
  .skills-box {
      padding: 20px;
-     width: 260px;
+     width: 150px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -411,7 +401,7 @@ nav ul li a:hover::after{
      border-radius: 0.5rem;
      border-bottom: 2px solid var(--main-color);
      /* box-shadow: 0 2px 7px rgba(14, 55, 54 /15%); */
-    background-color: rgb(230, 73, 16);
+     background-color: #262626;
  }
 
 
@@ -441,10 +431,8 @@ nav ul li a:hover::after{
 
  /* hover */
  .skills-box:hover {
-     /* background-color: #02225a; */
-    background-color: rgb(2, 166, 70);
+     background-color: rgb(156, 190, 43);
  }
-
 
 /* ================  contact details  ================== */
 
@@ -474,7 +462,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: rgb(2, 166, 70);
+    color: rgb(156, 190, 43);
     transform: translateY(-5px);
      
 }
@@ -495,10 +483,10 @@ nav ul li a:hover::after{
     border-radius: 10px;
 }
 #pdf:hover{
-    background-color: rgb(2, 166, 70);
+    background-color: rgb(156, 190, 43);
 }
 .btn2:hover{
-    background-color: rgb(2, 166, 70);
+    background-color: rgb(156, 190, 43);
 }
 .social-icons+a{
     padding-top: 5px;
@@ -545,7 +533,7 @@ form .btn2{
     width: 7%;
 }
 #icons a :hover{
-    color: rgb(2, 166, 70);
+    color: rgb(156, 190, 43);
     font-size: 40px;
 
 }
@@ -612,13 +600,13 @@ nav .fa-solid{
        }
           #education img+p {
               margin-top: -50px;
-              margin-left: 15%;
-              font-size: 17px;
+              margin-left: 60px;
+              font-size: 15px;
           }
     
           #education img+p+p {
               font-size: 13px;
-              margin-left: 15%;
+              margin-left: 60px;
               margin-bottom: 5%;
               margin-top: 1%;
     
@@ -661,8 +649,10 @@ nav .fa-solid{
    #koti{
     display: none;
    }
-
-   
+   #skills1>#skills-container1 {
+       grid-template-columns: repeat(2, 1fr);
+       gap: 20px;
+   }   
 }
 #msg{
     color: #61b752;
@@ -676,9 +666,21 @@ nav .fa-solid{
         border-radius: 5px;
     }
 .inside-1{
-    width: 250%;
-        
+    width: 250%;        
 }
+ #education img+p {
+     margin-top: -50px;
+     margin-left: 60px;
+     font-size: 15px;
+ }
+
+ #education img+p+p {
+     font-size: 13px;
+     margin-left: 60px;
+     margin-bottom: 5%;
+     margin-top: 1%;
+
+ }
 
 .inside-2 {
     width: 250%;
@@ -692,7 +694,10 @@ nav .fa-solid{
         width: 100%;
         font-size: 13px;
     }
-
+ #skills1>#skills-container1 {
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+ }
     
 }
 

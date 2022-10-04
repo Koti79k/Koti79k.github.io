@@ -4,46 +4,57 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="icon" type="image/x-icon" href="./Imges/favicon.ico.png"   style="background-color:transparent;height: 20%;width: 80%;">
-<link rel="stylesheet" href="./github.css">
-<link rel="stylesheet" href="./media.css">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./Imges/favicon.ico.png"
+      style="background-color: transparent; height: 20%; width: 80%"
+    />
+    <link rel="stylesheet" href="./github.css" />
+    <link rel="stylesheet" href="./media.css" />
 
-   <title>Koti Portfolio</title>
+    <title>Koti Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/e4868983fb.js"
       crossorigin="anonymous"
     ></script>
-<link rel="stylesheet" href="./index.js">  
-
+    <link rel="stylesheet" href="./index.js" />
   </head>
-   <!-- #region ========================   Header section Starts   ================== -->
+  <!-- #region ========================   Header section Starts   ================== -->
   <body>
     <div id="header">
       <div class="container">
-        <nav>
-          <h1 id="koti" style="color: rgb(17, 239, 110);font-size:250%">Koti Portfolio</h1>
+        <div id="k">
+        <nav>         
+          <h1 id="koti" style="color: rgb(187, 240, 12); font-size: 250%">
+            Koti Portfolio
+          </h1>       
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#about">Skills</a></li>
             <li><a href="#services">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
+        </nav> 
+      </div>
 
         <div class="header-text">
           <p>Java Backend Developer</p>
           <h1>Hi, I'm <span>Koteswararao</span> <br />From Andhra Pradesh</h1>
         </div>
         <div id="animated">
-          <img src="https://user-images.githubusercontent.com/105915717/192617762-4a3e755e-e814-484b-a365-5d139d116bd1.gif" >
+          <img
+            src="https://user-images.githubusercontent.com/105915717/192617762-4a3e755e-e814-484b-a365-5d139d116bd1.gif"
+          />
         </div>
       </div>
     </div>
 
-   <!--================= #region AboutMe section   ==============================  -->
+    <!--================= #region AboutMe section   ==============================  -->
     <div id="about">
       <div class="container">
         <div class="row">
@@ -61,19 +72,17 @@
             </p>
             <div class="tab-titles">
               <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
+                Details
               </p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
 
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>HTML</span><br />Experienced</li>
-                <li><span>CSS</span><br />Experienced</li>
-                <li><span>Javascript</span><br />Experienced</li>
-                <li><span>Java</span><br />Experienced</li>
-                <li><span>Spring Boot</span><br />Experienced</li>
-                <!-- <li><span>github</span><br />Experienced</li> -->
+                <li><span>Birthday</span><br/>December,1999</li>
+                <li><span>Phone No</span><br/>9014595789</li>
+                <li><span>Email</span><br/>Koteswararao791212@gmail.com</li>
+                <li><span>Language</span><br/>English ,Telugu</li> 
               </ul>
             </div>
 
@@ -89,180 +98,192 @@
         </div>
       </div>
     </div>
-    
- <!-- ==========================#region Project section   ========================-->
-    <!-- <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Projects</h1>
-        <div class="services-list">
-          <div id="orbitz">
-            <h2>orbitz</h2>
-            <img src="./Imges/orbitz.png" />
-            <p>
-              Orbitz is a travel website that enables consumers to search for
-              and book a broad range of hotel, Flights and destination
-              activities
-            </p>
-            <p>Tech Stack: HTML, CSS and Javascript</p>
-            <a href="https://reliable-llama-c038f5.netlify.app/">Go Live</a>
-            <a href="https://github.com/thecodervaibhav/Team-App-Monsters"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
+<!--  ==========================#region Skills section   ======================== -->
+    <div id="skills1">
+      <h1 class="heading1">----- My Skills -----</h1>
+      <div id="skills-container1">
+        <div>
+          <img src="./Imges/java.png" alt="java" />
+          <p>Java</p>
+        </div>
+        <div>
+          <img src="./Imges/js.png" alt="java" />
+          <p>JavaScript</p>
+        </div>
+        <div>
+          <img src="./Imges/html.png" alt="java" />
+          <p>HTML</p>
+        </div>
+        <div>
+          <img src="./Imges/css.png" alt="java" />
+          <p>CSS</p>
+        </div>
+        <div>
+          <img src="./Imges/github.png" alt="java" />
+          <p>Github</p>
+        </div>
+        <div>
+          <img src="./Imges/netlify.png" alt="java" />
+          <p>Netlify</p>
+        </div>
+        <div>
+          <img src="./Imges/MySQL.jpg" alt="java" />
+          <p>MySQL</p>
+        </div>
+        <div>
+          <img src="./Imges/springboot.png" alt="java" />
+          <p>Spring Boot</p>
+        </div>
+        <div>
+          <img src="./Imges/hibernate.png" alt="java" />
+          <p>Hibernate</p>
+        </div>
+      </div>
+    </div>
+<!--==================== #region  Project  Starts=============================-->
 
-          <div>
-            <h2>GeekBuying</h2>
-            <img src="./Imges/GeekBuying.png" />
-            <p>GeekBuying is a Booking Electronic gadgets</p>
-            <p>Tech Stack: HTML, CSS and Javascript</p>
-            <a href="https://lucky-crostata-7684aa.netlify.app/">Go Live</a>
-            <a href="https://github.com/Koti79k/GeekBuying-U2"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+    <section class="project" id="project">
+      <h2 class="title">----- My Project Work -----</h2>
+      <div class="cont-box">
+        <div class="project-main">
+          <div class="inside-1">
+            <img src="./Imges/11.png" alt="" id="pimg" />
           </div>
-          <div>
+          <div class="inside-2">
+            <div><h2>ORBITZ.COM (CLONE)</h2></div>
+            <div class="pro-info">
+              <p>
+                Orbitz.com help us to book hotels,flight,cars etc, and also help
+                to choose best vacation plan to us.
+              </p>
+              <p class="tech-stach">Tech Stack: HTML | CSS | JS</p>
+              <p class="resp-proj">
+                My Responsibilities: front-end and backend database. Creating a
+                Hotel page with all Booking functinalities
+              </p>
+              <div class="anch">
+                <a href="https://reliable-llama-c038f5.netlify.app/"
+                  >Live Now</a
+                >
+                <a href="https://github.com/thecodervaibhav/Orbitz.com-clone"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <h2>Youtube</h2>
-            <img src="./Imges/youtube.png" />
-            <p>
-              It is a video sharing service where users can watch, like, share,
-              comment and upload their own videos.
-            </p>
-            <p>Tech Stack: HTML, CSS, Javascript and API</p>
-            <a href="https://stellar-marzipan-2c148d.netlify.app/">Go Live</a>
-            <a
-              href="https://github.com/masai-course/Kine_fw18_0279/tree/master/unit-3%3DJS201/sprint-3%3DYoutube%20App/day-1%3DYoutube/assignments/Youtube-2"
-              ><i class="fa-brands fa-github"></i
-            ></a>
+        <div class="project-main">
+          <div class="inside-1"><img src="./Imges/12.png" alt="" /></div>
+          <div class="inside-2">
+            <div><h2>GEEKBUYING.COM (CLONE)</h2></div>
+            <div class="pro-info">
+              <p>
+                GeekBuying is one of the E-commerce websites delivering a wide
+                range of consumer technology across the globe.
+              </p>
+              <p class="tech-stach">Tech Stack: HTML | CSS | JS</p>
+              <p class="resp-proj">
+                My Responsibilities: Creating Home Page, Navbar and Payment
+                Section.
+              </p>
+
+              <div class="anch">
+                <a href="https://lucky-crostata-7684aa.netlify.app/"
+                  >Live Now</a
+                >
+                <a href="https://github.com/Koti79k/GeekBuying-U2">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-main">
+          <div class="inside-1"><img src="./Imges/13.png" alt="" /></div>
+          <div class="inside-2">
+            <div><h2>YOUTUBE.COM (CLONE)</h2></div>
+            <div class="pro-info">
+              <p>
+                Enjoy the videos and music you love, upload original content,
+                and share it all with friends, family, and the world on YouTube.
+              </p>
+              <p class="tech-stach">Tech Stack: HTML | CSS | JS | RestApi</p>
+              <p class="resp-proj">
+                My Responsibilities: Real Youtube App. Search any video and play
+                it. UI is almost same like Real Youtube.
+              </p>
+
+              <div class="anch">
+                <a href="https://stellar-marzipan-2c148d.netlify.app/"
+                  >Live Now</a
+                >
+                <a
+                  href="https://github.com/masai-course/Kine_fw18_0279/tree/master/unit-3%3DJS201/sprint-3%3DYoutube%20App/day-1%3DYoutube/assignments/Youtube-2"
+                  >GitHub</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div> -->
-    <!--==================== #region  Project  Starts=============================-->
-      <!-- project section start -->
-    <section class="project" id="project"> 
-        <h2 class="title">----- My Project Work -----</h2>
-        <div class="cont-box">
-
-          <div class="project-main">
-            <div class="inside-1"><img src="./Imges/11.png" alt="" id="pimg"> </div>
-            <div class="inside-2">
-                <div><h2>ORBITZ.COM (CLONE)</h2></div>
-                <div class="pro-info"><p>
-                    Orbitz.com help us to book hotels,flight,cars etc, and also help to choose best vacation plan to us.
-                </p>
-                    <p class="tech-stach">Tech Stack: HTML | CSS | JS</p>
-                    <p class="resp-proj">My Responsibilities: 
-                    front-end and backend database.
-                    Creating a Hotel page with all Booking functinalities</P>
-                    <div class="anch">
-                        <a href="https://reliable-llama-c038f5.netlify.app/">Live Now</a>
-                        <a href="https://github.com/thecodervaibhav/Orbitz.com-clone">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-main">
-            <div class="inside-1"><img src="./Imges/12.png" alt=""> </div>
-            <div class="inside-2">
-                <div><h2>GEEKBUYING.COM (CLONE)</h2></div>
-                <div class="pro-info">
-                  <p> GeekBuying is one of the E-commerce websites 
-                  delivering a wide range of consumer technology across the globe.
-                   </p>
-                    <p class="tech-stach">Tech Stack: HTML | CSS | JS</p>
-                    <p class="resp-proj">My Responsibilities: Creating Home Page, Navbar and Payment Section.
-                    </p>
-                    <!-- <a href="https://github.com/Abrar2003/symptomatic-property-4004" class="resume-btn">Github</a>
-                    <a href="https://jade-sawine-5e8a26.netlify.app/" class="resume-btn">Live</a> -->
-                    <div class="anch">
-                        <a href="https://lucky-crostata-7684aa.netlify.app/">Live Now</a>
-                        <a href="https://github.com/Koti79k/GeekBuying-U2">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-main">
-            <div class="inside-1"><img src="./Imges/13.png" alt=""> </div>
-            <div class="inside-2">
-                <div><h2>YOUTUBE.COM (CLONE)</h2></div>
-                <div class="pro-info"><p> Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.</p>
-                    <p class="tech-stach">Tech Stack: HTML | CSS | JS | RestApi </p>
-                    <p class="resp-proj">My Responsibilities: 
-                    Real Youtube App. Search any video and play it. UI is almost same like Real Youtube.</p>
-                    <!-- <a href="https://github.com/AmitKuMaurya/LifeStyle-Collaboration" class="resume-btn">Github</a>
-                    <a href="https://ubiquitous-moonbeam-0077c0.netlify.app/" class="resume-btn">Live</a> -->
-                    <div class="anch">
-                        <a href="https://stellar-marzipan-2c148d.netlify.app/">Live Now</a>
-                        <a href="https://github.com/masai-course/Kine_fw18_0279/tree/master/unit-3%3DJS201/sprint-3%3DYoutube%20App/day-1%3DYoutube/assignments/Youtube-2">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-     
-    </div>
     </section>
 
-   <!-- =================== Project section Completed===================-->
+<!-- =================== Project section Completed===================-->
     <div id="blank"></div>
 
-    <!-- =================== statics =================== -->
-        <div class="heading" id="github">
-            <h2>----- My Statics -----</h2>
-           
-        </div>
+<!-- =================== statics =================== -->
+    <div class="heading" id="github">
+      <h2>----- My Statics -----</h2>
+    </div>
 
-        <div class="skills-content" id="statics">
-            <div class="skills-box">
-                <div class="circle"><h2>1200+</h2></div>
-                <h3>Hour of coding</h3>
-            </div>
-            <div class="skills-box">
-                <div class="circle"><h2>400+</h2></div>
-                <h3>DSA Questions</h3>
-            </div>
-            <div class="skills-box">
-                <div class="circle"><h2>100+</h2></div>
-                <h3>Hours of Soft Skills</h3>
-            </div>
-            <div class="skills-box">
-                <div class="circle"><h2>150+</h2></div>
-                <h3>Github Commits</h3>
-            </div>
-            <div class="skills-box">
-                <div class="circle"><h2>3+</h2></div>
-                <h3>Collaborative Projects</h3>
-            </div>
-            <div class="skills-box">
-                <div class="circle"><h2>10+</h2></div>
-                <h3>Solo Projects</h3>
-            </div>
-          
-        </div>
+    <div class="skills-content" id="statics">
+      <div class="skills-box">
+        <div class="circle"><h2>1200+</h2></div>
+        <h3>Hour of coding</h3>
+      </div>
+      <div class="skills-box">
+        <div class="circle"><h2>400+</h2></div>
+        <h3>DSA Questions</h3>
+      </div>
+      <div class="skills-box">
+        <div class="circle"><h2>100+</h2></div>
+        <h3>Hours of Soft Skills</h3>
+      </div>
+      <div class="skills-box">
+        <div class="circle"><h2>150+</h2></div>
+        <h3>Github Commits</h3>
+      </div>
+      <div class="skills-box">
+        <div class="circle"><h2>3+</h2></div>
+        <h3>Collaborative Projects</h3>
+      </div>
+      <div class="skills-box">
+        <div class="circle"><h2>10+</h2></div>
+        <h3>Solo Projects</h3>
+      </div>
+    </div>
 
 <!-- ===================  github  Calender  ============================ -->
-      
-    <!-- <div class="profile-title" style="background-color: #ffff ;width: 80%;margin: auto;margin-bottom: 50px;border-radius: 10px;margin-top: 50px;" >
-      <h4 class="mb-0" style="text-align: center; color: rgb(2, 14, 24);font-size: 30px;margin-bottom: -2%;padding-top: 20px;">
-        GitHub contribution calendar
-      </h4>
-      <img
-        src="https://ghchart.rshah.org/Koti79k"
-        alt="Koti79k"
-        style="width: 90%; height: auto; margin-top: 5vh;margin:5%;"
-      />
-    </div> -->
 
-    <h4 id="gi" class="mb-0" style="text-align: center; color: rgb(17, 239, 110);font-size: 200%;margin-bottom: -2%;padding-top: 50px;">
-        ----- GitHub contribution calendar ----- </h4>
-      
-     <div class="calendar">
-        <!-- Loading stuff -->
-        <!-- Loading the data just for you. -->
-      </div>
-    <!--========================== #region  Contact region starts    ==================================-->
+    <h4
+      id="gi"
+      class="mb-0"
+      style="
+        text-align: center;
+        color: rgb(187, 240, 12);
+        font-size: 200%;
+        margin-bottom: -2%;
+        padding-top: 50px;
+      "
+    >
+      ----- GitHub contribution calendar -----
+    </h4>
+
+    <div class="calendar">
+      <!-- Loading stuff -->
+      <!-- Loading the data just for you. -->
+    </div>
+<!--========================== #region  Contact region starts    =========================-->
     <div id="contact">
       <div class="container">
         <div class="row">
