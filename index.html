@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./github.css" />
     <link rel="stylesheet" href="./media.css" />
 
+
     <title>Koti Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <script
@@ -24,24 +25,23 @@
   <!-- #region ========================   Header section Starts   ================== -->
   <body>
     <div id="header">
-      <div class="container">
-        <div id="k">
-        <nav>         
-          <h1 id="koti" style="color: rgb(187, 240, 12); font-size: 250%">
+      
+        <nav id="nav">         
+          <h1 id="koti" style="color: #fff; font-size: 250%">
             Koti Portfolio
           </h1>       
           <ul id="sidemenu">
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#about">Skills</a></li>
-            <li><a href="#services">Projects</a></li>
+            <li><a href="#skills1">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav> 
-      </div>
-
+     
+<div class="container">
         <div class="header-text">
           <p>Java Backend Developer</p>
           <h1>Hi, I'm <span>Koteswararao</span> <br />From Andhra Pradesh</h1>
@@ -51,6 +51,9 @@
             src="https://user-images.githubusercontent.com/105915717/192617762-4a3e755e-e814-484b-a365-5d139d116bd1.gif"
           />
         </div>
+       
+        
+
       </div>
     </div>
 
@@ -272,8 +275,8 @@
         text-align: center;
         color: rgb(187, 240, 12);
         font-size: 200%;
-        margin-bottom: -2%;
         padding-top: 50px;
+        margin-top: 70px;
       "
     >
       ----- GitHub contribution calendar -----
@@ -284,11 +287,13 @@
       <!-- Loading the data just for you. -->
     </div>
 <!--========================== #region  Contact region starts    =========================-->
-    <div id="contact">
+    <h1 id="details">----- Contact Details -----</h1>
+  <div id="contact">
       <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
+        <!-- <h1 >----- Contact Details -----</h1> -->
+        <div class="row">          
+          <div class="contact-left"> 
+            <h1 class="sub-title">Contact</h1>         
             <p>
               <i class="fa-solid fa-envelope"></i>Koteswararao791212@gmail.com
             </p>
@@ -314,7 +319,7 @@
           </div>
           <div class="contact-right">
             <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your name" required />
+              <input type="text" name="Name" placeholder="Your name" required />             
               <input
                 type="email"
                 name="Email"

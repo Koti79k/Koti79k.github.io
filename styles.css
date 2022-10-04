@@ -24,15 +24,22 @@ body{
 
 .container{
     padding: 10px 10%;
+   
 }
+
 nav{ 
-    /* position: fixed; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap; 
-  
+    overflow: hidden;
+    background-color:rgb(237, 74, 14);
+    position: fixed;
+    top: 0;
+    width: 100%;
+
 }
+
 
 
 
@@ -87,8 +94,8 @@ nav ul li a:hover::after{
 }
 #animated img{
     height: 80%;
-        width: 90%;
-        
+    width: 90%;
+    border-radius: 20px;    
 }
 /*========================   Header section completed   ==================*/
 
@@ -226,6 +233,8 @@ nav ul li a:hover::after{
 
 #skills1>#skills-container1>div:hover {
     transform: scale(1.05);
+    background-color: rgb(190, 246, 5);
+    color: rgb(230, 73, 16);
 }
 
 #skills1>#skills-container1>div>img {
@@ -349,7 +358,7 @@ body{
     color:rgb(237, 74, 14) ;
 }
 .anch>a:hover{
-    color: rgb(187, 240, 12);
+    color: rgb(143, 172, 45);
 }
 
  /*================================= statics =================================== */
@@ -435,13 +444,26 @@ body{
  }
 
 /* ================  contact details  ================== */
-
+#details{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    font-size: 200%;
+    color: rgb(187, 240, 12);
+}
+.sub-title{
+    font-size: 300%;    
+}
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 35%;    
+    /* margin-top: 50px; */
+   
+    
 }
 .contact-right {
-    flex-basis: 60%;
+    flex-basis: 60%;    
 }
+
 .contact-left p{
     margin-top: 30px;
 }
@@ -553,7 +575,9 @@ nav .fa-solid{
     #github h2{
         font-size: 120%;
     }
-    
+    nav{
+        background-color: #111;
+    }
         #animated {           
             margin-top: 20%;
             margin-bottom: 5%;
@@ -569,8 +593,10 @@ nav .fa-solid{
     }
         nav .fa-solid {
             display: block;
-            font-size: 25px;
+            font-size: 25px;          
+           margin-left: -200px;
         }
+      
         nav ul{
             background: rgb(237, 74, 14);
             position: fixed;
@@ -589,7 +615,7 @@ nav .fa-solid{
         nav ul .fa-solid{
             position: absolute;
             top: 25px;
-            left: 25px;
+            left: 220px;
             cursor: pointer;
 
         }
@@ -652,7 +678,10 @@ nav .fa-solid{
    #skills1>#skills-container1 {
        grid-template-columns: repeat(2, 1fr);
        gap: 20px;
-   }   
+   } 
+  
+
+  
 }
 #msg{
     color: #61b752;
@@ -698,7 +727,32 @@ nav .fa-solid{
      grid-template-columns: repeat(3, 1fr);
      gap: 20px;
  }
+ #animated {
+     height: 50%;
+     width: 60%;   
+    margin: auto;
+ }
+
+ #animated img {
+     height: 80%;
+     width: 90%;
+     margin-top: 30px;
+
+ }
     
 }
+@media screen and (max-width: 1050px) and (min-width: 901px) {
+#animated {
+        height: 50%;
+        width: 60%;
+        margin: auto;
+    }
 
+    #animated img {
+        height: 80%;
+        width: 90%;
+        margin-top: 30px;
+        margin-bottom: 40px;
 
+    }
+}
