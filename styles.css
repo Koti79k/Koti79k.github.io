@@ -116,7 +116,6 @@ nav ul li a:hover::after{
 
 #about{
     padding: 80px 0;
-    color: #ababab;
     margin-top: 0;
 }
 .row{
@@ -140,7 +139,6 @@ nav ul li a:hover::after{
 .sub-title{
     font-size: 60px;
     font-weight: 600 ;
-    color: #fff;
     margin-top: -10px;
     margin-bottom: 10px;
 }
@@ -171,8 +169,7 @@ nav ul li a:hover::after{
 
 }
 .tab-links.active-link::after{
-    width: 90%;
-    
+    width: 90%;   
 
 }
 .tab-contents ul li{
@@ -180,7 +177,7 @@ nav ul li a:hover::after{
     margin:10px 0 ;
 }
 .tab-contents ul li span{
-    color: rgb(187, 240, 12);
+    color: rgb(164, 213, 3);
     font-size: 14px;
 }
 /*============    displaying one tab       ==================*/
@@ -208,6 +205,7 @@ nav ul li a:hover::after{
     margin-left: 70px;
     margin-bottom: 5%;
     margin-top: 1%;
+  
 
 }
 /*============    Education tab completed     ==================*/
