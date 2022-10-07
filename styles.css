@@ -262,11 +262,13 @@ nav ul li a:hover::after{
 body{
     overflow-x: hidden;
 }
+
 .project .title{
     text-align: center;
     font-size: 40px;
     padding-bottom: 20px;
     color: rgb(187, 240, 12);
+   
 }
 
 .project .carousel .card {
@@ -276,6 +278,7 @@ body{
     text-align: center;
     overflow: hidden;
     transition: all 0.3s ease;
+   
 }
 
 .pro-info {
@@ -285,6 +288,7 @@ body{
 
 .edu-logo {
     width: 35%;
+   
 }
 
 .pro-info>div {
@@ -293,11 +297,13 @@ body{
     justify-content: center;
     gap: 20px;
     cursor: pointer;
+   
 }
 
 .pro-info>div>img {
     width: 40px;
     height: 40px;
+   
 
 }
 
@@ -311,10 +317,12 @@ body{
     transition: transform 1000ms ease-in-out;
     background-color: #fff;
     color: #111;
+   
 }
 
 .cont-box>img {
     width: 50px;
+   
 }
 
 .cont-box>h2 {
@@ -324,10 +332,12 @@ body{
 
 .project-main:nth-child(even) {
     transform: translateX(-400%);
+   
 }
 
 .project-main.show {
     transform: translateX(0);
+   
 }
 
 .my-cont {
@@ -343,6 +353,7 @@ body{
     margin-top: 5%;   
     margin: 30px auto;
     border: 1px solid black;
+   
 }
 
 .inside-1 {
@@ -362,6 +373,7 @@ body{
     width: 90%;
     height: 90%;
     padding: 2px;
+   
 }
 .anch{
     height: 50px;
@@ -460,6 +472,11 @@ body{
  }
 
 /* ================  contact details  ================== */
+#contact1{
+    height: auto;
+    width: auto;
+}
+
 #details{
     text-align: center;
     margin-bottom: 30px;
