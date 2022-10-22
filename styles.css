@@ -44,14 +44,15 @@ position: fixed;
 nav{ 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap; 
     overflow: hidden;
     background-color:#262626;
     position: fixed;
     top: 0;
+    z-index: 99;
     width: 100%;
-
+    transition: 0.4s;
 }
 
 
@@ -213,6 +214,7 @@ nav ul li a:hover::after{
 #skills1 {
     width: 80%;
     margin: auto;
+   
 }
 
 #skills1 h1 {
