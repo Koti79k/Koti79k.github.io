@@ -1,17 +1,17 @@
-const boxes = document.querySelectorAll('.project-main');
-window.addEventListener('scroll' , checkBoxes);
-checkBoxes()
-function checkBoxes(){
-    const triggerBottom = window.innerHeight/5 *4
+const boxes = document.querySelectorAll(".project-main");
+window.addEventListener("scroll", checkBoxes);
+checkBoxes();
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
   console.log(boxes);
-    boxes.forEach(box => {
-        const boxTop = box.getBoundingClientRect().top
-        if(boxTop < triggerBottom){
-            box.classList.add('show')
-        }else{
-            box.classList.remove('show')
-        }
-    })
+  boxes.forEach((box) => {
+    const boxTop = box.getBoundingClientRect().top;
+    if (boxTop < triggerBottom) {
+      box.classList.add("show");
+    } else {
+      box.classList.remove("show");
+    }
+  });
 }
 
 // function darkMode() {
@@ -28,15 +28,12 @@ function checkBoxes(){
 // 	}
 
 function myFunction() {
-   var element = document.body;
-	element.classList.toggle("dark-mode");
-	
+  var element = document.body;
+  element.classList.toggle("dark-mode");
 }
-const btn = document.getElementById('moon');
+const btn = document.getElementById("moon");
 
-btn.addEventListener('click', function onClick() {
-  btn.style.backgroundColor = 'white';
-  btn.style.color = 'black';
+btn.addEventListener("click", function onClick() {
+  btn.style.backgroundColor = "white";
+  btn.style.color = "black";
 });
-
-
