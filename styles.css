@@ -488,6 +488,7 @@ body {
   color: rgb(237, 74, 14);
   display: inline-block;
   transition: transform 0.5s;
+  cursor: pointer;
 }
 .social-icons a:hover {
   color: rgb(156, 190, 43);
@@ -558,6 +559,9 @@ form .btn2 {
   font-size: 40px;
 }
 
+#icons a{
+  cursor: pointer;
+}
 /*---------------Small Screens -----------------*/
 nav .fa-solid {
   display: none;
