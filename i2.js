@@ -64,3 +64,57 @@ function Live14() {
   );
 }
 let pr40 = document.querySelector(".pr14").addEventListener("click", Live14);
+
+
+/* ============================== Contact ============================= */
+
+function Live20() {
+  window.open("https://www.facebook.com/koti.nic/", "_blank");
+}
+let pr41 = document.querySelector(".pr20").addEventListener("click", Live20);
+
+function Live21() {
+  window.open("https://www.instagram.com/koti_nic/", "_blank");
+}
+let pr42 = document.querySelector(".pr21").addEventListener("click", Live21);
+
+function Live22() {
+  window.open("https://github.com/Koti79k", "_blank");
+}
+let pr43 = document.querySelector(".pr22").addEventListener("click", Live22);
+
+function Live23() {
+  window.open(
+    "https://www.linkedin.com/in/koteswararao-pathakoti-b8a377230/",
+    "_blank"
+  );
+}
+let pr44 = document.querySelector(".pr23").addEventListener("click", Live23);
+
+
+/* ============================== Icon ============================= */
+
+
+function Live24() {
+  window.open("https://www.facebook.com/koti.nic/", "_blank");
+}
+let pr45 = document.querySelector(".pr24").addEventListener("click", Live24);
+
+function Live25() {
+  window.open("https://www.instagram.com/koti_nic/", "_blank");
+}
+let pr46 = document.querySelector(".pr25").addEventListener("click", Live25);
+
+function Live26() {
+  window.open("https://github.com/Koti79k", "_blank");
+}
+let pr47 = document.querySelector(".pr26").addEventListener("click", Live26);
+
+function Live27() {
+  window.open(
+    "https://www.linkedin.com/in/koteswararao-pathakoti-b8a377230/",
+    "_blank"
+  );
+}
+let pr48 = document.querySelector(".pr27").addEventListener("click", Live27);
+
