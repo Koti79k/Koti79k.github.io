@@ -65,6 +65,17 @@ function Live14() {
 }
 let pr40 = document.querySelector(".pr14").addEventListener("click", Live14);
 
+/* ========================================================================== */
+
+function Live15() {
+  window.open("https://github.com/Koti79k/EmployeeManagement", "_blank");
+}
+let pr49 = document.querySelector(".pr30").addEventListener("click", Live15);
+
+function Live16() {
+  window.open("https://github.com/Koti79k/EmployeeManagement", "_blank");
+}
+let pr50 = document.querySelector(".pr31").addEventListener("click", Live16);
 
 /* ============================== Contact ============================= */
 
